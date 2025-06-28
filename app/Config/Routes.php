@@ -23,6 +23,17 @@ $routes->get('/admin/edit-data-admin/(:alphanum)', 'Admin::edit_data_admin/$1');
 $routes->post('/admin/update-admin', 'Admin::update_data_admin');
 $routes->get('/admin/hapus-data-admin/(:alphanum)', 'Admin::hapus_data_admin/$1');
 
+$routes->get('/admin/data-transaksi-peminjaman', 'Admin::data_transaksi_peminjaman');
+$routes->get('/admin/peminjaman-step-1', 'Admin::peminjaman_step1');
+$routes->get('/admin/tes-qr', 'Admin::tes_qr');
+$routes->get('/admin/peminjaman-step-2', 'Admin::peminjaman_step2');
+$routes->post('/admin/peminjaman-step-2', 'Admin::peminjaman_step2');
+$routes->get('/admin/simpan-temp-pinjam/(:alphanum)', 'Admin::simpan_temp_pinjam/$1');
+$routes->get('/admin/hapus-temp/(:alphanum)', 'Admin::hapus_peminjaman/$1');
+$routes->get('/admin/simpan-transaksi-peminjaman', 'Admin::simpan_transaksi_peminjaman');
+$routes->get('generate-qr-code/(:segment)', 'Admin::generateQRCode/$1');
+$routes->get('admin/detail-peminjaman/(:any)', 'Admin::detail_peminjaman/$1');
+
 // Routes untuk module anggota
 $routes->get('/anggota/master-data-anggota', 'Anggota::master_data_anggota');
 $routes->get('/anggota/input-data-anggota', 'Anggota::input_data_anggota');

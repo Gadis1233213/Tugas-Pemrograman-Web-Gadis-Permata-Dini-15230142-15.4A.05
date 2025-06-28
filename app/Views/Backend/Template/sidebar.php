@@ -31,6 +31,8 @@
 							<span class="glyphicon glyphicon-share-alt"></span> Data buku
 					</a>
 					</li>
+					                    <li><a href="<?= base_url('/admin/peminjaman-step-1'); ?>"><span class="glyphicon glyphicon-share-alt"></span>Transaksi Peminjaman</a></li>
+                    <li><a href="<?= base_url('/admin/data-transaksi-peminjaman'); ?>"><span class="glyphicon glyphicon-share-alt"></span>Data Transaksi Peminjaman</a></li>
 				</ul>
 			</li>
 			<li role="presentation" class="divider"></li>
